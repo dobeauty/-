@@ -2,13 +2,13 @@
 
 body {
     height: 2000px;
+    font-family: sans-serif; 
+    box-sizing: border-box;
 }
 * {
     margin: 0 auto;
-    box-sizing: border-box;
     font-size: 16px;
     line-height: 1.4;
-    font-family: sans-serif; 
 }
 
 a {
@@ -43,7 +43,7 @@ button {
     header {
         width: 100%;
         height: 160px;
-        border-bottom: 2px dashed gray;        
+        border-bottom: 1px solid darkgray;        
     }
 
 /* TOP MENU */
@@ -100,7 +100,7 @@ button {
     header .inner ul {
         position: absolute;
         top: 40px;
-        left: 15%;
+        left: 30px;
     }
 
     header .inner ul > li {
@@ -110,7 +110,7 @@ button {
     }
 
     header .inner ul > li a {
-        margin-right: 25px;
+        margin-right: 20px;
      }
 
      header .inner ul > li a img {
@@ -149,21 +149,20 @@ button {
 
  /* fade-in search */
  header .fade-in {
-     position: fixed;
+     position: absolute;
+     /*  */
      width: 100%;
      height: 65px;
-     /* background-color: ivory; */
-     
      top: 0;
      z-index: 9;
     border-bottom: 2px solid #43d337;
  } 
 
  header .fade-in .inner {
-    /* background-color: aqua; */
+    
     height: 65px;
     display: flex;
-    /* border-bottom: 2px solid #43d337; */
+    
  }
 
  header .fade-in .inner a {
@@ -179,7 +178,6 @@ button {
      height: 60px;
      font-size: 30px;
      color: darkgray;
-     
      outline: none;
  }
 
@@ -195,3 +193,200 @@ button {
     text-align: center;
     
  }
+
+  
+ /* NAVIGATION */
+
+ nav {
+    
+ }
+
+ nav .inner {
+    position: relative;
+ }
+
+ nav .inner .sub-menu  {
+    height: 56px;
+    padding-left: 50px;
+ }
+ nav .inner .sub-menu ul {
+    height: 56px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+ }
+ 
+ nav .inner .sub-menu  ul > li {
+    margin-left: 20px;
+ }
+
+ nav .inner .sub-menu ul > li a {
+    color: #43d337;
+    font-weight: 800;
+
+ }
+
+ nav .inner .sub-menu ul > li a.cr__black {
+    color: #333;
+
+ }
+
+ nav .inner .sub-menu ul > li:last-child a {
+    font-weight: normal;
+    font-size: 14px;
+ }
+
+
+
+ /* ASIDE MENU */
+nav .inner .aside {
+    width: 380px;
+    height: 1500px;
+    border: 2px dashed #333;
+    position: absolute;
+    right: 0;
+}
+
+nav .inner .aside .login-menu {
+    width: 350px;
+    height: 135px;
+    border: 2px dashed orange;
+    position: absolute;
+    left: 0;
+}
+
+
+nav .inner .aside .login-menu span {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #808080;
+}
+
+nav .inner .aside .login-menu button {
+    background-color: #19CE60;
+    width: 315px;
+    height: 48px;
+    
+}
+
+nav .inner .aside .login-menu button a {
+    color: #fff;
+    /* background-color: red; */
+    width: 120px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+nav .inner .aside .login-menu ul {
+    margin-top: 25px;
+    display: flex;
+}
+
+nav .inner .aside .login-menu ul li {
+
+}
+
+nav .inner .aside .login-menu ul li a {
+    color: #404040;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+nav .inner .aside .login-menu ul li:last-child a {
+    margin-left: 130px;
+}
+
+
+/* etc info */
+nav .inner .aside .etc-info {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 348px;
+    height: 270px;
+    
+}
+
+nav .inner .aside .etc-info .swiper-container {
+    height: 47px;
+    border: 2px dashed blue;    
+    /* background-color: blue; */
+}
+
+nav .inner .aside .etc-info img {
+    width: 348px;
+    height: 200px;
+    
+}
+
+
+/* Shopping */
+    nav .inner .aside .shop {
+        width: 350px;
+        height: 1600px;
+        background-color:yellow;
+        position: absolute;
+        top: 420px;
+        left: 0;
+    }
+
+    nav .inner .aside .shop .shop-title {
+        height: 44px;
+        background-color: gray;
+        
+    }
+
+    nav .inner .aside .shop .shop-title ul {
+         background-color: #19CE60;
+         display: flex;
+    } 
+
+    nav .inner .aside .shop .shop-title ul li {
+        
+    }
+
+    nav .inner .aside .shop .shop-title ul li a{
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN MENU */
+
+
+nav .inner .main-menu {
+    width: 850px;
+    height: 2730px;
+    border: 3px dashed darkgray;
+    position: absolute;
+    left: 5%;
+    padding-right: 30px;
+    
+}
+
+nav .inner .main-menu a {
+    width: 750px;
+    height: 135px;
+    margin: 0 auto;
+    
+
+}
