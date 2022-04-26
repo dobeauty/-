@@ -1,3 +1,5 @@
+// Scroll fixed
+
 const searchEls = document.querySelector('header .fade-in')
 
 window.addEventListener('scroll', function(){
@@ -17,3 +19,13 @@ window.addEventListener('scroll', function(){
 })
 
 
+
+// Swiper Animation
+
+// new Swiper('.headline .swiper-container' , {
+//     direction: 'vertical',
+//     autoplay: {
+//         delay: 3000
+//     },
+//     loop: true,
+// })

@@ -373,7 +373,7 @@ nav .inner .aside .etc-info img {
 /* MAIN MENU */
 
 
-nav .inner .main-menu {
+nav .inner .main {
     width: 850px;
     height: 2730px;
     border: 3px dashed darkgray;
@@ -383,10 +383,40 @@ nav .inner .main-menu {
     
 }
 
-nav .inner .main-menu a {
+nav .inner .main a {
     width: 750px;
     height: 135px;
     margin: 0 auto;
-    
 
 }
+
+nav .inner .main .headline {
+    width: 750px;
+    height: 49px;
+    background-color: #F7F9FA;
+    margin: 0 auto;
+    margin-top: 12px;
+    position: relative;
+}
+
+nav .inner .main .headline .news__selector {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    /* background-color: red; */
+    font-weight: bold;
+    
+}
+
+nav .inner .main .headline a:first-child h1 {
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-right: 14px;
+}
+
+nav .inner .main .headline .swiper-container {
+    display: none;
+}
+
